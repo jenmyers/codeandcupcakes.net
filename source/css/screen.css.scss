@@ -164,3 +164,51 @@ a:hover.button {
   color: #cae9eb;
   transition: background-color 1s, ease, color 1s ease;
 }
+
+/* Email Signup Form */
+
+#mc_embed_signup h4 {
+  text-align: center;
+}
+
+#mc_embed_signup input.button {
+  background-color: #4bb39a;
+  border-bottom: none;
+  border-radius: 5px;
+  color: #ffffff;
+  display: block;
+  font-family: "museo-sans-rounded", sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  height: 3em;
+  margin: 1em auto 0 auto;
+  padding: 0.5em 1em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color 0.5s, ease, color 0.5s ease;
+  width: 225px;
+}
+
+#mc_embed_signup input.button:hover {
+  background-color: #189476;
+  color: #cae9eb;
+  transition: background-color 1s, ease, color 1s ease;
+}
+
+#mc_embed_signup .mc-field-group input {
+  padding: 1em 0;
+}
+
+#mc_embed_signup input {
+  border: 1px solid #e2e0d7 !important;
+  border-radius: 5px;
+}
+
+#mc_embed_signup #mce-success-repsonse {
+  color: #666;
+}
+
+#mc_embed_signup div.response {
+  font-weight: normal;
+  width: 100%;
+}
