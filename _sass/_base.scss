@@ -1,0 +1,362 @@
+// Body border
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: auto;
+  width: 100%;
+}
+
+body:before, body:after {
+  background-color: #fff;
+  content: "";
+  height: 12px;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+body:before {
+  top: 0;
+}
+body:after {
+  bottom: 0;
+}
+
+body {
+  border-left-color: #fff;
+  border-left-style: solid;
+  border-left-width: 12px;
+  border-right-color: #fff;
+  border-right-style: solid;
+  border-right-width: 12px;
+}
+
+// Layout 
+
+body {
+  background-color: #fff;
+  color: $color-base;
+  font-family: $font-primary;
+  font-size: 1em;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.container {
+  @include outer-container;
+}
+
+.page {
+  @include span-columns(8);
+  @include shift(2);
+  padding: 1em 0;
+}
+
+.title {
+  background-image: url("../images/cover.png");
+  background-size: cover;
+  padding-bottom: 40px;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.section {
+  text-align: center;
+  padding: 1em 0;
+}
+
+p {
+  font-size: 1.4em;
+  font-weight: 100;
+}
+
+.intro, .contact {
+  background-color: $color-emphasis;
+  color: $color-inverted;
+}
+
+.registration {
+  @include background-design;
+}
+
+.workshops {
+  background-color: $color-link-button;
+  color: $color-inverted;
+  min-height: 200px;
+}
+
+.workshop-registration {
+  @include clearfix;
+  @include border-top;
+  margin-top: 2em;
+  padding-top: 2em;
+  text-align: left;
+}
+
+.workshop-info {
+  @include span-columns(5);
+}
+
+.scholarships {
+  @include background-design;
+}
+
+.volunteers {
+  background-color: $color-link;
+  color: $color-inverted;
+  a {
+    color: lighten($color-link, 25%);
+    &:hover {
+      color: $color-inverted;
+    }
+  }
+}
+
+.instructor {
+  @include background-design;
+}
+
+.email-signup {
+  @include span-columns(6);
+  @include shift(3);
+}
+
+.logo {
+  background-image: url("../images/cupcake.png");
+  background-repeat: no-repeat;
+  height: 238px;
+  margin: 0 auto;
+  width: 340px;
+}
+
+header.header-site {
+  background-color: #fff;
+  height: 50px;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+}
+
+ol {
+  list-style-type: none;
+  margin-top: 15px;
+  padding: 0;
+  li {
+    display: inline-block;
+    margin: 0 0.5em;
+    text-transform: uppercase;
+    a {
+      @include transition-link;
+      border-bottom: none;
+      color: lighten($color-link, 10%);
+      &:hover {
+        border-bottom: none;
+        color: darken($color-link, 15%);
+      }
+    }
+  }
+}
+
+h1.site-title {
+  font-size: 5em;
+  font-weight: 100;
+  line-height: 1;
+  margin: 0;
+  span {
+    font-size: 0.5em;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+}
+
+h2.site-tagline {
+  color: $color-tagline;
+  font-size: 1.3em;
+  font-weight: 300;
+  margin: 1em auto;
+  line-height: 1;
+  text-transform: uppercase;
+  width: 75%;
+}
+
+h3.heading-section {
+  font-size: 2em;
+  margin: 0;
+}
+
+h4.workshop-title {
+  font-size: 1.6em;
+  margin-top: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h5 {
+  font-size: 1.2em;
+  font-weight: 300;
+  margin: 0.5em 0;
+  & span {
+    color: $color-emphasis;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+// Anchors
+
+a {
+  @include border-bottom;
+  @include transition-link;
+  color: $color-link;  
+  text-decoration: none;
+  &:hover {
+    border-bottom-color: darken($color-border, 15%);
+    color: darken($color-link, 15%);
+  }
+  &.social {
+    @include transition-icon;
+    border-bottom-color: none;
+    border-bottom-style: none;
+    border-bottom-width: none;
+    fill: $color-inverted;
+    fill-opacity: 0.5;
+  }
+  &:hover.social {
+    fill-opacity: 1;
+  }
+}
+
+a.button-hairline {
+  @include transition-button-hairline;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-bottom: none;
+  border-color: $color-link-button;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: $width-border-button;
+  color: $color-link-button;
+  display: inline-block;
+  font-size: 1.2em;
+  margin: 2em 1em;
+  padding: 1em;
+}
+
+a:hover.button-hairline {
+  background-color: rgba(255, 255, 255, 1);
+  border-color: darken($color-link-button, 10%);
+  color: darken($color-link-button, 10%);
+}
+
+a.button-solid {
+  @include transition-button-solid;
+  background-color: $color-link-button;
+  border-bottom: none;
+  border-radius: 5px;
+  color: $color-inverted;
+  display: inline-block;
+  font-size: 1.2em;
+  margin: 2em 1em;
+  padding: 1em;
+}
+
+a:hover.button-solid {
+  background-color: darken($color-link-button, 10%);
+  border-bottom: none;
+}
+
+a.button-solid-ticket {
+  @extend .button-solid;
+  background-color: $color-emphasis;
+  border-bottom: none;
+  margin-top: 1em;
+}
+
+a:hover.button-solid-ticket {
+  background-color: darken($color-emphasis, 10%);
+  border-bottom: none;
+}
+
+a.button-solid-contact {
+  @extend .button-solid;
+  background-color: darken($color-emphasis, 10%);
+  margin-top: 1em;
+}
+
+a:hover.button-solid-contact {
+  background-color: darken($color-emphasis, 20%);
+}
+
+// Icons
+
+.icon {
+  display: inline-block;
+}
+
+.icon-lg {
+  @extend .icon;
+  fill: #999;
+  height: 80px;
+  width: 80px;
+  &.invert {
+    fill: $color-inverted;
+    fill-opacity: 0.5;
+  }
+}
+
+.icon-social {
+  @extend .icon;
+  height: 60px;
+  width: 60px;
+}
+
+a .icon-lg {
+  border-bottom: none;
+}
+
+
+// Email signup form
+
+#mc_embed_signup h4 {
+  margin-top: 0;
+  text-align: center;
+}
+
+#mc_embed_signup input.button {
+  background-color: darken($color-emphasis, 10%);
+  border-bottom: none;
+  border-radius: 5px;
+  color: $color-inverted;
+  display: inline-block;
+  float: right;
+  font-family: $font-primary;
+  font-size: 1em;
+  height: 3.6em;
+  margin-right: 1em;
+  padding: 0em 0.75em;
+  text-transform: uppercase;
+  transition: background-color 0.5s, ease, color 0.5s ease;
+}
+
+#mc_embed_signup input.button:hover {
+  background-color: darken($color-emphasis, 20%);
+  transition: background-color 0.5s, ease, color 0.5s ease;
+}
+
+#mc_embed_signup .mc-field-group input {
+  padding: 1em 0;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#mc_embed_signup #mce-success-repsonse {
+  color: #666;
+}
+
+#mc_embed_signup div.response {
+  font-weight: normal;
+  width: 100%;
+}
+
+#mc_embed_signup #mce-success-response {
+  color: $color-inverted !important;
+}

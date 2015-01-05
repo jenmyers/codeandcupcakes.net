@@ -1,0 +1,9 @@
+# Site settings
+title: Code and Cupcakes
+email: hello@codeandcupcakes.net
+description: A mother/daughter beginning coding workshop series in Chicago.
+baseurl: ""
+url: "http://codeandcupcakes.net"
+
+# Build settings
+markdown: kramdown

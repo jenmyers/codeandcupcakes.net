@@ -1,0 +1,75 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$font-primary:      "museo-sans-rounded", sans-serif;
+$font-secondary:    "rooney-web", serif;
+
+$color-base:            #444;
+$color-inverted:        #fff;
+$color-tagline:         #777;
+$color-border:          #ccc;
+$color-link:            #e25e71;
+$color-link-button:     #f8c439;
+$color-emphasis:        #4bb39a;
+
+
+$width-border-hairline: 1px;
+$width-border-button:   2px;
+
+
+// Mixins
+
+@mixin border-bottom {
+  border-bottom-color: $color-border;
+  border-bottom-style: solid;
+  border-bottom-width: $width-border-hairline;
+}
+
+@mixin border-top {
+  border-top-color: $color-border;
+  border-top-style: solid;
+  border-top-width: $width-border-hairline;
+}
+
+@mixin transition-link {
+  transition-duration: 0.5s;
+  transition-property: border-bottom, color;
+  transition-timing-function: ease-out;
+}
+
+@mixin transition-button-hairline {
+  transition-duration: 0.5s;
+  transition-property: background-color, border, color;
+  transition-timing-function: ease-out;
+}
+
+@mixin transition-button-solid {
+  transition-duration: 0.5s;
+  transition-property: background-color, color;
+  transition-timing-function: ease-out;
+}
+
+@mixin transition-icon {
+  transition-duration: 0.5s;
+  transition-property: fill, fill-opacity;
+  transition-timing-function: ease-out;
+}
+
+@mixin background-design {
+  background-image: url("../images/bg-design.png");
+  background-repeat: repeat;
+}
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  "bourbon/bourbon",
+  "neat/neat",
+  "base",
+  "syntax-highlighting"
+;
