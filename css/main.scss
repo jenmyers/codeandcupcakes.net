@@ -11,15 +11,15 @@ $font-secondary:    "rooney-web", serif;
 
 $color-base:            #444;
 $color-inverted:        #fff;
-$color-tagline:         #777;
+$color-tagline:         #999;
 $color-border:          #ccc;
 $color-link:            #e25e71;
 $color-link-button:     #f8c439;
 $color-emphasis:        #4bb39a;
 
-
 $width-border-hairline: 1px;
-$width-border-button:   2px;
+$width-border-medium:   2px;
+$width-border-thick:    8px;
 
 
 // Mixins
@@ -63,6 +63,12 @@ $width-border-button:   2px;
 @mixin background-design {
   background-image: url("../images/bg-design.png");
   background-repeat: repeat;
+  border-bottom-color: $color-inverted;
+  border-bottom-style: solid;
+  border-bottom-width: $width-border-thick;
+  border-top-color: $color-inverted;
+  border-top-style: solid;
+  border-top-width: $width-border-thick;
 }
 
 

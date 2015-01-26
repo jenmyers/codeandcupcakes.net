@@ -3,34 +3,6 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-html, body {
-  height: 100%;
-  margin: 0;
-  overflow: auto;
-  width: 100%; }
-
-body:before, body:after {
-  background-color: #fff;
-  content: "";
-  height: 12px;
-  position: fixed;
-  left: 0;
-  right: 0; }
-
-body:before {
-  top: 0; }
-
-body:after {
-  bottom: 0; }
-
-body {
-  border-left-color: #fff;
-  border-left-style: solid;
-  border-left-width: 12px;
-  border-right-color: #fff;
-  border-right-style: solid;
-  border-right-width: 12px; }
-
 body {
   background-color: #fff;
   color: #444;
@@ -58,6 +30,9 @@ body {
   .page:last-child {
     margin-right: 0; }
 
+.secondary {
+  padding-top: 2em; }
+
 .title {
   background-image: url("../images/cover.png");
   background-size: cover;
@@ -75,16 +50,34 @@ p {
 
 .intro, .contact {
   background-color: #4bb39a;
+  border-bottom-color: #6fc2ae;
+  border-bottom-style: solid;
+  border-bottom-width: 8px;
+  border-top-color: #6fc2ae;
+  border-top-style: solid;
+  border-top-width: 8px;
+  color: #fff;
   color: #fff; }
 
 .registration {
   background-image: url("../images/bg-design.png");
-  background-repeat: repeat; }
+  background-repeat: repeat;
+  border-bottom-color: #fff;
+  border-bottom-style: solid;
+  border-bottom-width: 8px;
+  border-top-color: #fff;
+  border-top-style: solid;
+  border-top-width: 8px; }
 
 .workshops {
   background-color: #f8c439;
-  color: #fff;
-  min-height: 200px; }
+  border-bottom-color: #fad36a;
+  border-bottom-style: solid;
+  border-bottom-width: 8px;
+  border-top-color: #fad36a;
+  border-top-style: solid;
+  border-top-width: 8px;
+  color: #fff; }
 
 .workshop-registration {
   border-top-color: #ccc;
@@ -108,10 +101,22 @@ p {
 
 .scholarships {
   background-image: url("../images/bg-design.png");
-  background-repeat: repeat; }
+  background-repeat: repeat;
+  border-bottom-color: #fff;
+  border-bottom-style: solid;
+  border-bottom-width: 8px;
+  border-top-color: #fff;
+  border-top-style: solid;
+  border-top-width: 8px; }
 
 .volunteers {
   background-color: #e25e71;
+  border-bottom-color: #ea8997;
+  border-bottom-style: solid;
+  border-bottom-width: 8px;
+  border-top-color: #ea8997;
+  border-top-style: solid;
+  border-top-width: 8px;
   color: #fff; }
   .volunteers a {
     color: #f5cad0; }
@@ -120,7 +125,13 @@ p {
 
 .instructor {
   background-image: url("../images/bg-design.png");
-  background-repeat: repeat; }
+  background-repeat: repeat;
+  border-bottom-color: #fff;
+  border-bottom-style: solid;
+  border-bottom-width: 8px;
+  border-top-color: #fff;
+  border-top-style: solid;
+  border-top-width: 8px; }
 
 .email-signup {
   float: left;
@@ -139,7 +150,10 @@ p {
   width: 340px; }
 
 header.header-site {
-  background-color: #fff;
+  background-color: #e25e71;
+  border-bottom-color: #ea8997;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
   height: 50px;
   text-align: center;
   width: 100%;
@@ -158,12 +172,13 @@ ol {
       transition-property: border-bottom, color;
       transition-timing-function: ease-out;
       border-bottom: none;
-      color: #ea8997; }
+      color: #f2b4bd; }
       ol li a:hover {
         border-bottom: none;
-        color: #ce253e; }
+        color: white; }
 
 h1.site-title {
+  color: #fff;
   font-size: 5em;
   font-weight: 100;
   line-height: 1;
@@ -174,7 +189,7 @@ h1.site-title {
     vertical-align: middle; }
 
 h2.site-tagline {
-  color: #777;
+  color: #999;
   font-size: 1.3em;
   font-weight: 300;
   margin: 1em auto;
@@ -200,6 +215,16 @@ h5 {
     color: #4bb39a;
     font-weight: bold;
     text-transform: uppercase; }
+
+.credit {
+  font-size: 0.8em;
+  text-align: right; }
+
+.faq-question {
+  font-weight: bold; }
+
+.faq-answer {
+  margin-bottom: 2em; }
 
 a {
   border-bottom-color: #ccc;
@@ -229,7 +254,7 @@ a.button-hairline {
   transition-duration: 0.5s;
   transition-property: background-color, border, color;
   transition-timing-function: ease-out;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.1);
   border-bottom: none;
   border-color: #f8c439;
   border-radius: 5px;
@@ -242,7 +267,7 @@ a.button-hairline {
   padding: 1em; }
 
 a:hover.button-hairline {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.2);
   border-color: #f5b509;
   color: #f5b509; }
 
@@ -296,6 +321,11 @@ a:hover.button-solid-contact {
 
 a .icon-lg {
   border-bottom: none; }
+
+.event {
+  border-color: #fff;
+  border-style: solid;
+  border-width: 8px; }
 
 #mc_embed_signup h4 {
   margin-top: 0;
