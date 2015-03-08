@@ -11,6 +11,7 @@ body {
 
 .container {
   @include outer-container;
+  padding-top: 0.8em;
 }
 
 .page {
@@ -27,7 +28,6 @@ body {
   background-image: url("../images/cover.png");
   background-size: cover;
   padding-bottom: 40px;
-  padding-top: 80px;
   text-align: center;
 }
 
@@ -114,23 +114,29 @@ p {
   background-image: url("../images/cupcake.png");
   background-repeat: no-repeat;
   height: 238px;
-  margin: 0 auto;
+  margin: 80px auto 0 auto;
   width: 340px;
 }
 
 header.header-site {
-  background-color: $color-link;
-  border-bottom-color: lighten($color-link, 10%);
-  border-bottom-style: solid;
-  border-bottom-width: $width-border-medium;
   height: 50px;
   text-align: center;
   width: 100%;
   position: fixed;
 }
 
+.sticky {
+  background-color: #333;
+}
+
+.page-header header.header-site{
+  background-color: #333;
+}
+
 ol {
   list-style-type: none;
+  font-size: 75%;
+  letter-spacing: 0.1em;
   margin-top: 15px;
   padding: 0;
   li {
@@ -140,7 +146,7 @@ ol {
     a {
       @include transition-link;
       border-bottom: none;
-      color: lighten($color-link, 20%);
+      color: #ccc;
       &:hover {
         border-bottom: none;
         color: lighten($color-link, 50%);
@@ -300,7 +306,7 @@ a:hover.button-solid-contact {
 
 .icon-lg {
   @extend .icon;
-  fill: #999;
+  fill: #ccc;
   height: 80px;
   width: 80px;
   &.invert {
