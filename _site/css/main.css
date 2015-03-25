@@ -14,7 +14,8 @@ body {
 .container {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding-top: 0.8em; }
   .container:after {
     content: "";
     display: table;
@@ -37,7 +38,6 @@ body {
   background-image: url("../images/cover.png");
   background-size: cover;
   padding-bottom: 40px;
-  padding-top: 80px;
   text-align: center; }
 
 .section {
@@ -146,21 +146,25 @@ p {
   background-image: url("../images/cupcake.png");
   background-repeat: no-repeat;
   height: 238px;
-  margin: 0 auto;
+  margin: 80px auto 0 auto;
   width: 340px; }
 
 header.header-site {
-  background-color: #e25e71;
-  border-bottom-color: #ea8997;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
   height: 50px;
   text-align: center;
   width: 100%;
   position: fixed; }
 
+.sticky {
+  background-color: #333; }
+
+.page-header header.header-site {
+  background-color: #333; }
+
 ol {
   list-style-type: none;
+  font-size: 75%;
+  letter-spacing: 0.1em;
   margin-top: 15px;
   padding: 0; }
   ol li {
@@ -172,7 +176,7 @@ ol {
       transition-property: border-bottom, color;
       transition-timing-function: ease-out;
       border-bottom: none;
-      color: #f2b4bd; }
+      color: #ccc; }
       ol li a:hover {
         border-bottom: none;
         color: white; }
@@ -308,7 +312,7 @@ a:hover.button-solid-contact {
   display: inline-block; }
 
 .icon-lg {
-  fill: #999;
+  fill: #ccc;
   height: 80px;
   width: 80px; }
   .icon-lg.invert {
