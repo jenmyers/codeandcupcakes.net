@@ -292,14 +292,14 @@ a:hover.button-solid-host {
 
 a.button-solid-contact {
   @extend .button-solid;
-  background-color: lighten($color-link, 10%);
-  border-color: $color-link;
+  background-color: darken($color-link, 5%);
+  border: none;
   color: #fff;
 }
 
 a:hover.button-solid-contact {
   background-color: darken($color-link, 10%);
-  border-color: $color-link;
+  border: none;
 }
 
 
