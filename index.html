@@ -6,7 +6,7 @@ title: Home
 <!-- Title -->
 <div class="title">
 
-  {% include header.html %}
+<!--   {% include header.html %} -->
 
   <div class="container">
 
@@ -15,11 +15,11 @@ title: Home
 
     <h1 class="site-title">Code <span>and</span> Cupcakes</h1>
 
-    <h2 class="site-tagline">a beginning coding workshop for mothers and daughters in Chicago</h2>
+    <h2 class="site-tagline">a beginning coding workshop for mothers and daughters</h2>
 
-    <a href="{{ site.url }}/#workshops" class="button-hairline">Learn more about the workshop</a>
+    <a href="{{ site.url }}/#host" class="button-solid">Host a Workshop</a>
 
-    <a href="{{ site.url }}/#registration" class="button-solid">Register for a workshop</a>
+    <a href="{{ site.url }}/#about" class="button-hairline">About the Workshop</a>
 
   </div>
 </div>
@@ -31,27 +31,30 @@ title: Home
 
       <svg class="icon-lg invert"><use xlink:href="#icon-code"></use></svg>
 
-      <p>Do you want to learn how to make your own web sites and apps? Do you want your daughter to learn, too? Most importantly: do you like cupcakes? Then come join us for a workshop led by a professional web designer/developer and her own daughter, complete with tasty snacks and a fun, supportive learning atmosphere.</p>
+      <p>Code and Cupcakes started as workshop in Chicago for mothers and daughters to learn about coding together. Now it exists as a bundle of curriculum and guides freely available to anyone who wants to host their own workshops.</p>
 
     </div>
   </div>
 </div>
 
-<!-- Registration -->
-<div class="registration section">
+<!-- Hosting Workshops -->
+<div class="host section">
   <div class="container">
     <div class="page">
 
-      <svg class="icon-lg"><use xlink:href="#icon-ticket"></use></svg>
-      <h3 id="registration" class="heading-section">Registration</h3>
+      <svg class="icon-lg"><use xlink:href="#icon-rocket"></use></svg>
+      <h3 id="host" class="heading-section">Host a Workshop</h3>
 
-      <div class="workshop-registration">
+      <p>In our workshops, we learn the basics of web development with HTML, CSS and JavaScript. And cupcakes. If you would like to host your own workshop, you can use all of our prepared workshop materials, including a slidedeck, lessons and event guide.</p>
 
-      <p>Code and Cupcakes workshops are currently on hiatus. <a href="http://eepurl.com/3fV8X">Join our mailing list</a> for news in the case new workshops are scheduled.</p>
+      <p>All Code and Cupcakes workshop materials are available at GitHub.</p>
 
-      <a href="{{ site.url }}/past.html" class="button-hairline">See past events</a>
+      <a href="" class="button-solid-host">Workshop Materials on GitHub</a>
 
-    </div>
+      <p>You can fork the repository or download individual files directly. <a href="https://help.github.com/en/github/getting-started-with-github/learning-about-github">GitHub has some documentation on getting started with their platform</a> if you find that useful. You can also submit pull requests if you find any issues or would like to share an improvement that can be incorporated into the primary material repository.</p>
+
+      <p>Workshop materials are licensed by a <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike</a> license, which means anyone can use, adapt and share the materials as long as they don't charge money for them or place additional restrictions on them. The idea is to make these workshops accessible to everyone. 🙂</p>
+
   </div>
 </div>
 
@@ -61,56 +64,9 @@ title: Home
     <div class="page">
 
       <svg class="icon-lg invert"><use xlink:href="#icon-laptop"></use></svg>
-      <h3 id="workshops" class="heading-section">Workshops</h3>
+      <h3 id="about" class="heading-section">About the Workshops</h3>
 
-      <p>In our workshops, we start learning the basics of web development with HTML, CSS and JavaScript. We provide laptops for each mother/daughter pair to work with, wireless internet connection, guided instruction, a team of teaching assistants and, of course, cupcakes (including vegan, gluten-free and peanut/tree-nut-free, plus beverages). There is no set age range, but you and your daughter will probably get the most out of the workshop if she is old enough to fully participate (7+). We use an online text editor that allows you to save your work to your own free account, so you can keep it and build on it. We'll also send you off with a list of resources to keep learning.</p>
-
-      <a href="{{ site.url }}/faq.html" class="button-solid-ticket">See FAQs</a>
-      <a href="{{ site.url }}/resources.html" class="button-solid-ticket">See Resources</a>
-
-    </div>
-  </div>
-</div>
-
-<!-- Scholarships -->
-<div class="scholarships section">
-  <div class="container">
-    <div class="page">
-
-    <svg class="icon-lg"><use xlink:href="#icon-rocket"></use></svg>
-    <h3 id="scholarships" class="heading-section">Scholarships</h3>
-
-    <p>We want everyone to be able to participate in our workshops, so we offer a number of free scholarships that include a mother/daughter pair ticket plus two single-day city transit passes. If you would like to apply for a scholarship, please <a href="https://docs.google.com/forms/d/1Sg9u177L4NO0wlwtGS0UhHcz-Subnfzq8I5PSXA9tI4/viewform">fill out our scholarship application</a>.</p>
-
-    </div>
-  </div>
-</div>
-
-<!-- Volunteers -->
-<div class="volunteers section">
-  <div class="container">
-    <div class="page">
-
-      <svg class="icon-lg invert"><use xlink:href="#icon-smile-o"></use></svg>
-      <h3 id="volunteers" class="heading-section">Volunteers</h3>
-
-      <p>We always need a number of volunteer teaching assistants to help out with our workshops. Only basic HTML/CSS/JS and computer skills are necessary and free cupcakes provided. If you would like to volunteer for a scheduled workshop, please <a href="mailto:hello@codeandcupcakes.net">email us directly</a>. If you're interested in volunteering but can't attend one of our scheduled workshops, please join our <a href="http://eepurl.com/9wFkD">volunteer mailing list</a> to receive word of future workshops.</p>
-
-      <!--<a href="{{ site.url }}/community.html" class="button-solid-ticket">See Our Community</a>-->
-
-    </div>
-  </div>
-</div>
-
-<!-- Instructor -->
-<div class="instructor section">
-  <div class="container">
-    <div class="page">
-
-      <img src="../images/jen.png" class="image-profile" />
-      <h3 id="instructor" class="heading-section">Instructor</h3>
-
-      <p><a href="http://jenmyers.net">Jen Myers</a> founded Code and Cupcakes in late 2014 and currently leads its workshops. Jen is a Chicago-based web designer/developer who also founded the Columbus, Ohio chapter of <a href="http://girldevelopit.com">Girl Develop It</a> in 2011 and now teaches with and advises the Chicago GDI chapter. She is the single mother of a nine-year-old daughter, whom she has been teaching how to create on the web for two years.</p>
+      <p>Code and Cupcakes originally held workshops in Chicago from 2014-2015. The workshops were designed and taught by <a href="https://jenmyers.net">Jen Myers</a> and supported by a wonderful group of volunteer teaching assistants and host venues. <a href="https://www.chicagotribune.com/business/blue-sky/chi-jen-myers-code-and-cupcakes-bsi-20140930-story.html">Jen and the workshops were profiled in September 2014 by the <em>Chicago Tribune</em></a>.</p>
 
     </div>
   </div>
@@ -128,16 +84,10 @@ title: Home
 
       <a href="mailto:hello@codeandcupcakes.net" class="button-solid-contact">Email Code and Cupcakes</a>
 
-      <div class="social">
+      <!-- <div class="social">
         <a href="http://twitter.com/codecupcakeschi" class="social"><svg class="icon-social"><use xlink:href="#icon-twitter-square"></use></svg></a>
         <a href="http://facebook.com/codeandcupcakes" class="social"><svg class="icon-social"><use xlink:href="#icon-facebook-square"></use></svg></a>
-      </div>
-
-      <p>To get news on upcoming workshops, join our mailing list.</p>
-
-      <div class="email-signup">
-        {% include email-signup.html %}
-      </div>
+      </div> -->
 
     </div>
   </div>

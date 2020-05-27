@@ -30,6 +30,12 @@ $width-border-thick:    8px;
   border-bottom-width: $width-border-hairline;
 }
 
+@mixin border-bottom-special {
+  border-bottom-color: lighten($color-link-button, 20%);
+  border-bottom-style: solid;
+  border-bottom-width: $width-border-hairline;
+}
+
 @mixin border-top {
   border-top-color: $color-border;
   border-top-style: solid;
